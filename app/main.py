@@ -5,8 +5,8 @@ from typing import Annotated
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response, status
 
-from app.database import StudentDatabase
-from app.schemas import Student, StudentCreate, StudentUpdate
+from database import StudentDatabase
+from schemas import Student, StudentCreate, StudentUpdate
 
 
 DEFAULT_DATABASE_PATH = Path(__file__).resolve().parent.parent / "data" / "students.db"
